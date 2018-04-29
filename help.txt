@@ -1,0 +1,14 @@
+
+app.zjgguolong.com
+
+
+http://api.sg04.com/index.php/index/index/main?link=http://app.zjgguolong.com
+
+外网qat已经部署完毕。
+之后程序上线流程调整为:
+第一步： 修改任意功能接口，开issue指向自己，写好BUG产生过程，修改完成后先经过自己的单元测试。
+第二步： 提交到内网git:  git.sg04.com 上，部署到内网进行接口测试
+第三步： 通知马来QA进行三端实际操作二次确认。QA确认后在issue下留言： 测试通过
+第四步： 联系小马或者我将修改好的程序build编译，后提交到外网git服务器
+第五步： 部署到外网测试环境，联系台湾QA进行复测。台湾QA确认后在issue下留言： 复测通过
+第六步： 打版本tag，上正式机
